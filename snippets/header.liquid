@@ -1,9 +1,10 @@
-<header>
-    <h1>{{shop.name}}</h1>
+<header class="w-full h-20 bg-black flex flex-row justify-between text-white items-center p-4">
+    {% comment %} <h1 class="text-4xl font-sans">{{shop.name}}</h1> {% endcomment %}
+    <h1 class="text-4xl font-sans font-bold text-gray-400">E-Shop</h1>
 
-    <ul>
+    <ul class="text-gray-300 font-light flex flex-row space-x-2 font-sans">
         {% for link in linklists.main-menu.links -%}
-        <li>{{ link.title | link_to: link.url}}</li>
+        <li class="hover:text-white">{{ link.title | link_to: link.url}}</li>
         {%- endfor %}
     </ul>
 </header>
