@@ -1,18 +1,24 @@
 {
-  "name": "shopify-theme",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "translingual-frontend",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss build -o assets/style.css.liquid --minify",
-    "watch": "tailwindcss -i ./tailwind.css -o assets/style.css.liquid --watch",
-    "serve": "theme watch --allow-live"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.4.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4"
   }
 }
